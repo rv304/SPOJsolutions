@@ -12,14 +12,14 @@
     int a[12],i,b,c,count;
     for(i=0;i<12;i++)
     a[i]=pow(5,i+1);
-    cin>>b;
+    scanf("%d",&b);
     while(b)
     {count=0;
-    cin>>c;
+    scanf("%d",&c);
     count=c/5;
     for(i=1;i<12;i++)
     count+=c/a[i];
-    cout<<count<<endl;
+    printf("%d\n",count);
     b--;
     }
     return 0;
